@@ -23,6 +23,9 @@ print_option_status (SOLOUD_BACKEND_SDL2 "SDL2 backend")
 option (SOLOUD_BACKEND_ALSA "Set to ON for building ALSA backend" OFF)
 print_option_status (SOLOUD_BACKEND_ALSA "ALSA backend")
 
+option (SOLOUD_BACKEND_MINIAUDIO "Set to ON for building Miniaudio backend" OFF)
+print_option_status (SOLOUD_BACKEND_MINIAUDIO "Miniaudio backend")
+
 option (SOLOUD_BACKEND_COREAUDIO "Set to ON for building CoreAudio backend" OFF)
 print_option_status (SOLOUD_BACKEND_COREAUDIO "CoreAudio backend")
 

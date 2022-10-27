@@ -180,6 +180,20 @@ if (SOLOUD_BACKEND_ALSA)
     )
 endif()
 
+if (SOLOUD_BACKEND_MINIAUDIO)                     
+    add_definitions (-DWITH_MINIAUDIO)                 
+                                           
+    set (BACKENDS_SOURCES              
+        ${BACKENDS_SOURCES} 
+        ${BACKENDS_PATH}/miniaudio/soloud_miniaudio.cpp
+    )              
+                                           
+    set (TARGET_HEADERS              
+        ${TARGET_HEADERS} 
+        ${BACKENDS_PATH}/miniaudio/miniaudio.h
+    )   
+endif()
+
 
 if (SOLOUD_BACKEND_COREAUDIO)
 	if (NOT APPLE)
